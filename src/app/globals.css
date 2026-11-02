@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "booknook";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: #f7f8f6;
+  --color-base-200: #eceee9;
+  --color-base-300: #d9ddd5;
+  --color-base-content: #1b2420;
+  --color-primary: #1f4d45;
+  --color-primary-content: #f2f7f4;
+  --color-secondary: #2f3e6e;
+  --color-secondary-content: #eef1fb;
+  --color-accent: #e3a72f;
+  --color-accent-content: #2a1d00;
+  --color-neutral: #1b2420;
+  --color-neutral-content: #eceee9;
+  --color-info: #2f6fb5;
+  --color-info-content: #ffffff;
+  --color-success: #2e8b57;
+  --color-success-content: #ffffff;
+  --color-warning: #d98a1c;
+  --color-warning-content: #2a1700;
+  --color-error: #c0392b;
+  --color-error-content: #ffffff;
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.75rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "booknook-dark";
+  default: false;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-base-100: #121a18;
+  --color-base-200: #19231f;
+  --color-base-300: #25322d;
+  --color-base-content: #e6ece8;
+  --color-primary: #5cc2a8;
+  --color-primary-content: #06201a;
+  --color-secondary: #8fa2e8;
+  --color-secondary-content: #0c1330;
+  --color-accent: #efb84a;
+  --color-accent-content: #2a1d00;
+  --color-neutral: #25322d;
+  --color-neutral-content: #e6ece8;
+  --color-info: #5aa0e6;
+  --color-info-content: #04182e;
+  --color-success: #4cc38a;
+  --color-success-content: #03210f;
+  --color-warning: #efb84a;
+  --color-warning-content: #2a1700;
+  --color-error: #ef6b5b;
+  --color-error-content: #2d0a05;
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.75rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+body { font-family: var(--font-body), system-ui, sans-serif; line-height: 1.65; }
+
+/* One heading style for every section */
+.section-title {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-base-content);
+}
+.section-lead { max-width: 60ch; color: color-mix(in oklab, var(--color-base-content) 72%, transparent); }
+.brand { font-family: var(--font-display), system-ui, sans-serif; font-weight: 800; letter-spacing: -0.02em; font-size: 1.4rem; }
+
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
