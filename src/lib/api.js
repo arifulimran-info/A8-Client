@@ -1,4 +1,4 @@
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API = process.env.NEXT_PUBLIC_API_URL || "http://a8-server.vercel.app";
 
 // Works on the server (public calls) and in the browser (public + JWT calls)
 export async function apiFetch(path, { method = "GET", body, auth = true } = {}) {
